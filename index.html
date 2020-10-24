@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Codystar&family=Lobster&family=Ubuntu:wght@300&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="css/styles.css">
     <title>Ana Manuel</title>
 </head>
 <body>
     <nav>
-        <button onclick="changeBgColor()">Change Mode</button>
-        <ul>
-            <li><a href="#welcome">Welcome</a></li>
+        <!-- <button onclick="changeBgColor()">Change Mode</button> -->
+        <a class="brand" href="http://"><i class="fas fa-laptop-code"></i>Lady Developer</a>
+        <ul class="nav">
             <li><a href="#who">Who I am</a></li>
             <li><a href="#what">What I do</a></li>
             <li><a href="#contact">Get in Touch</a></li>
@@ -18,33 +20,128 @@
     </nav>
     <main>
         <section id="welcome">
-            <h1>Ana Paula Manuel</h1>
+            <img src="/images/dev.png" alt="">
+            <div class="welcome">
+               <h1 class="title">Ana Paula Manuel</h1>
+                <p>
+                    If ("You are looking for a great profissional, who loves creating awesome websites")  {
+                </p> 
+                <a href="#contact">Click here!</a>
+                <p>}</p>
+            </div> 
+            <div class="skills">
+                    <!-- Include icons -->
+                    <i class="fab fa-html5"></i>
+                    <i class="fab fa-css3-alt"></i>
+                    <i class="fab fa-js-square"></i>
+                    <i class="fab fa-react"></i>
+                    <i class="fab fa-node"></i>
+                    <i class="fas fa-leaf"></i>
+                    <i class="fas fa-database"></i>
+                    
+            </div>
         </section>
 
         <section id="who">
-            <h2>Ana Manuel</h2>
-            <p>
-                My name is Ana and I am a Full Stack Developer who loves solving problems and 
-                creating amazing functional websites. I'd like to think that I can solve any 
-                problem you might have, then I remember I am not great dealing with drama and I 
-                trust my husband to deal with our finances. On the other hand I am a great listener 
-                and self-proclaimed Life Coach. So if you are looking for someone who can create 
-                modern and functional websites and life guidance advice I am the one for the job.
-            </p>
-            <span><a href="#">Check my projects out!</a></span>
+            <img src="/images/ana.jpg" alt="">
+            <div class="who">
+                <h2 class="title">Ana Manuel</h2>
+                <p class="description">
+                    My name is Ana and I am a Full Stack Developer who loves solving problems and 
+                    creating amazing functional websites. I'd like to think that I can solve any 
+                    problem you might have, then I remember I am not great dealing with drama and I 
+                    trust my husband to deal with our finances. On the other hand I am a great listener 
+                    and self-proclaimed Life Coach. So if you are looking for someone who can create 
+                    modern and functional websites and life guidance advice I am the one for the job.
+                </p>
+                <a class="button blue" href="#what">Check my projects out!</a>
+            </div>
+
         </section>
 
         <section id="what">
+            <h2 class="title">Projects</h2>
+            <div class="projects">
+                <div class="mj">
+
+                </div>
+                <div class="project project-reverse">
+                    <div class="description-reverse">
+                        <h5>Tbug</h5>
+                        <p> TBug tracker was created to assist daily taks managment.</p>
+                        <p> Tracking time and bugs in each project become easy.</p>
+                        <span>React - CSS - React Bootstrap - Nodejs - MongoDB</span>
+                        <div class="project-bottom">
+                            <a class="button" href="#">Website</a>
+                            <a class="button" href="#">Source</a>
+                        </div>    
+                    </div> 
+                    <img class="projects-img" src="/images/tbug.png" alt="Tbug main page">
+                </div>
+                <div class="project">
+                    <img class="projects-img" src="/images/newsletter.JPG" alt="newsletter page">
+                    <div class="description">
+                        <h5>Newsletter</h5>
+                        <p>Newsletter create to Call for action</p>
+                        <span>HTML - CSS - Nodejs - Expressjs - Mailchimp</span>
+                        <div class="project-bottom">
+                            <a class="button" href="#">Website</a>
+                            <a class="button" href="#">Source</a>
+                        </div>
+                        
+                    </div>  
+                </div>
+                <div class="project project-reverse">
+                    <div class="description-reverse">
+                        <h5>Blog</h5>
+                        <p>Awesome blog where can be created "posts" using http requests. </p>
+                        <span>EJS - CSS - Bulma - Nodejs - Expressjs - Mongoose</span>
+                        <div class="project-bottom">
+                            <a class="button" href="#">Website</a>
+                            <a class="button" href="#">Source</a>
+                        </div>    
+                    </div> 
+                    <img class="projects-img" src="/images/KaizenCouple.JPG" alt="Blog page">
+                </div>
+                <div class="project">
+                    <img class="projects-img" src="/images/mj.JPG" alt="Marlon Manuel page">
+                    <div class="description">
+                        <h5>MJ Real Estate</h5>
+                        <p>Website under construction</p>
+                        <span>HTML - Bootstrap - JavaScript</span>
+                        <div class="project-bottom">
+                            <a class="button" href="#">Website</a>
+                            <a class="button" href="#">Source</a>
+                        </div>    
+                    </div>  
+                </div>
+            </div>
 
         </section>
     
         <section id="contact">
-            
+            <h2 class="title">Contact me!</h2>
+            <form>
+                <label for="name"> Name:  </label>
+                <input id="name" name="name" type="text" placeholder="Name">
+                <label for="email"> Email: </label>
+                <input id="email" name="email" type="email" placeholder="@email">
+                <label for="message"> Message: </label>
+                <textarea id="message" name="message" rows="8" cols="33"></textarea>
+                <button type="submit">Submit</button>
+            </form>
         </section>
     </main>
-    <footer>&copy; Lady Developer</footer>
+    <footer>
+        <ul class="icons">
+            <li><a href="https://www.instagram.com/lady.developer/"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://twitter.com/anhacorrea"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://github.com/LadyDeveloper"><i class="fab fa-github"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/ana-manuel-21004327/"><i class="fab fa-linkedin"></i></a></li>
+        </ul>        
+        <p>&copy; Lady Developer</p>
+    </footer>
    
-
     <script src="js/main.js"></script>
 </body>
 </html>

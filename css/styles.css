@@ -1,56 +1,282 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: none;
-}
-
 body{
-    display: grid;
-    grid-template-areas:
-      "nav content "
-      "nav footer ";
-    grid-template-columns: 200px auto ;
-    grid-template-rows: auto auto ;
-    grid-gap: 10px;
-    height: 100vh;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-nav{
-    grid-area: nav;
-    padding-left: 10px;
+
+nav, .nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: purple;
+    color: white;
 }
- 
-main{
-    grid-area: content;
+nav li{
+    color: white;
+    padding: 0.5rem;
 }
 
-footer{
-    grid-area: footer;
-}
-ul{
-    list-style: none;
+nav a {
+    color: white;
 }
 
-ul>li{
-    padding: 10px;
+nav ul a:hover{
+    background-color: white;
+    color: purple;
+    padding: 1.5rem;
 }
-    
+
+li {
+    list-style: none; 
+    text-decoration: none;
+    padding: 0 1rem;
+}
+
+P{
+    line-height: 2;
+    font-size: px;
+    font-weight: 200;
+}
+
+
 a{
     text-decoration: none;
+    padding: 1rem;
 }
 
-#welcome{
+ #who, #contact{
     height: 100vh;
+}
+
+img{
+    max-width: 50vw;
+}
+
+.title{
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    font-size: 4rem;
+}
+
+.fa-laptop-code{
+    color: white;
+    font-size: 1.5rem;
+    padding: 0 0.5rem;
+}
+
+.brand{
+    font-family: 'Lobster', cursive;
+    color: white;
+}
+
+.fa-html5{
+    color: red;
+}
+
+.fa-css3-alt{
+    color: #146EB0;
+}
+
+.fa-js-square{
+    color: orange;
+}
+
+.fa-react{
+    color: #57D3F5;
+}
+
+.fa-node{
+    color: #8CBF3D;
+}
+.fa-leaf{
+    color: #4DA53F;
+}
+
+.fa-database{
+    color: #2D83C2;
+}
+
+.skills{
+    display: flex;
+    justify-content: center;
+}
+
+.skills i{
+    padding: 1rem;
+    font-size: 3rem;
+}
+
+.welcome{
+    margin: 0 8rem;
+}
+
+.welcome p{
+ padding: 2.5rem 0;
+}
+
+.welcome a{
+    margin-left: 2rem;
+    border: 1px solid purple;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    background-color: white;
+    color: purple;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.welcome a:hover{
+    color: white;
+    background-color: purple;
+}
+
+#welcome img{
+    float: right;
+}
+
+.welcome p{
+    font-size: 1.5rem;
+    font-family: 'Acme', sans-serif;
+}
+
+#who img{
+    max-height: 100vh;
+    animation: fadeIn ease 20s;
+}
+
+@keyframes fadeIn{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
 }
 
 #who{
-    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: purple;
 }
 
-#what{
-    height: 100vh;
+.who .title, .who p{
+    color: white;
+}
+
+.description, .button{
+    margin: 2rem;
+}
+
+.button, button{
+    border: 1px solid purple;
+    border-radius: 5px;
+    padding: 0.5rem;
+    background-color: white;
+    color: purple;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.button:hover, button:hover{
+    color: white;
+    background-color: purple;
+}
+
+.blue:hover{
+    color: white;
+    background-color: blue;
+}
+
+.project-bottom{
+    margin-top: 2rem;
+}
+
+.project{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1rem;
+    box-shadow: 5px 5px 8px purple;
+    height: 70vh;
+    /* width: 80vw; */
+}
+
+.projects-img{
+ box-shadow: 5px 2px 5px plum;
+ height: 50vh;
+ border-radius: 10px;
+ opacity: 0.5;
+ transition: 0.2s;
+}
+
+.projects-img:hover{
+    opacity: 1;
+    transform: scale(1.5);
+   position: absolute;
+}
+
+h5{
+    font-family: 'Lobster', cursive;
+    font-size: 2rem;
+    color: #146EB0;
 }
 
 #contact{
-    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: purple;
+}
+
+#contact .title{
+    color: white;
+}
+
+#what .title{
+    color: #146EB0;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    color: white;
+}
+
+label{
+    margin: 0.4rem 0;
+}
+
+form button{
+    width: 10vw;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+form button:hover{
+    width: 10vw;
+    margin-top: 1rem;
+    background-color: blue;
+}
+input, textarea{
+    border-radius: 5px;
+    border: 1px solid purple;
+    padding: 1rem;
+}
+
+
+span{
+    font-size: 0.8rem;
+    font-style: italic;
+    color: blue;
+}
+
+footer{
+    position: sticky;
+    text-align: center;
+    color: purple;
+}
+
+.icons{
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: purple;
 }
