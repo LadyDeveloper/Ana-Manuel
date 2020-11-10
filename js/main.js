@@ -1,13 +1,13 @@
 const changeTitle = setInterval(() => {
-  document.querySelector("h1").innerHTML =
-    document.querySelector("h1").innerHTML == "Lady Developer"
-      ? "Ana Manuel"
-      : "Lady Developer";
+  document.querySelector("span").innerHTML =
+    document.querySelector("span").innerHTML == "a Developer"
+      ? "Ana"
+      : "a Developer";
       
-    if (document.querySelector("h1").innerHTML === "Lady Developer") {
-        document.querySelector("h1").style.color = " #146EB0";
+    if (document.querySelector("span").innerHTML === "a Developer") {
+        document.querySelector("span").style.color = " black";
     } else {
-        document.querySelector("h1").style.color = "#408b35";
+        document.querySelector("span").style.color = "#ffff";
     }
 }, 1500);
 
