@@ -29,12 +29,25 @@ ul a:hover {
 }
 
 .brand{
-    margin: 0.5rem;
+    margin: 1.2rem;
 }
 
 ul, li{
     display: flex;
     padding: 0 1rem;
+}
+
+.icon-hidden{
+    display: none;
+    padding: 0.5rem;
+    margin: 0 0.5rem;
+}
+
+.icon-hidden:hover {
+    background-color: white;
+    color: #B0748E;
+
+    border-radius: 0.5rem;
 }
 
 main{
@@ -54,7 +67,7 @@ main{
 
 #welcome img{
     height: 25vh;
-    width: 12vw;
+    width: 20vw;
     border-radius: 50%;
     padding: 2rem 0;
 }
@@ -108,7 +121,7 @@ h5{
 
 .project{
     color: white;
-    min-width: 45vw;
+    width: 45vw;
     height: 45vh;
     display: flex;
     justify-content: space-around;
@@ -210,13 +223,13 @@ input, textarea{
 }
 
 button{
-    width: 5vw;
+    width: 4rem;
     padding: 0.5rem;;
     background-color: #fe4066;
     border: none;
     border-radius: 5px;
     color: white;
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: bold;
 }
 
@@ -234,4 +247,75 @@ footer{
 
 .icons i:hover{
     font-size: 1.8rem;
+}
+
+
+@media screen and (max-width : 1050px){
+    .projects{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .project{
+        width: 70vw;
+    }
+    #welcome img{
+        width: 25vw;
+    }
+}
+
+@media screen and (max-width : 800px){
+    nav ul{ display: none;}
+    .icon-hidden{
+        display: block;
+    }
+    #welcome img{
+        width: 30vw;
+    }
+    .icon-hidden {
+        padding: 0.5rem;
+        margin: 0.5rem;
+    }
+}
+
+@media screen and (max-width : 700px){
+
+    .project{
+        width: 90vw;
+    }
+    #welcome img{
+        width: 36vw;
+    }
+    form{
+        width: 75vw;
+    }
+    
+    .icon-hidden {
+        padding: 0.5rem;
+        margin: 0.5rem;
+    }
+}
+
+
+@media screen and (max-width : 500px){
+
+    .project{
+        font-size: 1rem;
+    }
+
+    .button{
+        font-size: 0.8rem;
+    }
+    form{
+        width: 75vw;
+    }
+
+    #welcome img{
+        width: 40vw;
+    }
+    .icon-hidden {
+        padding: 0.5rem;
+        margin: 0.5rem;
+    }
 }
