@@ -16,16 +16,13 @@ nav{
     display: flex;
     justify-content: space-between;
     padding: 0.5rem;
-    background-color: rgba(176,116,142,1)
+    background-color:#8269dd;;
 }
 ul a{
     padding:  0.5rem;
 }
 ul a:hover {
-    background-color: white;
-    color: #B0748E;
-    padding: 0.5rem;
-    border-radius: 0.5rem;
+    color: black;
 }
 
 .brand{
@@ -56,49 +53,57 @@ main{
 
 #welcome{
     height: 90vh;
-    color: white;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    /* grid-template-columns: 1fr 1fr;
+    flex-direction: column; */
     align-items: center;
     justify-content: center;
-    background: rgb(255,255,255);
-    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(176,116,142,1) 100%); 
+    /* margin: 2rem 1rem 2rem 1rem; */
 }
-
-#welcome img{
-    height: 25vh;
-    width: 20vw;
-    border-radius: 50%;
-    padding: 2rem 0;
-}
-
-.title{
-    font-style: italic;
-    font-size: 3rem;
-    color: white;
+.column{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+    width: 90vw;
 }
 
 #welcome p{
     color: #030303;
     font-size: 1.2rem;
+    /* margin: 0 1rem 2.5rem 1rem; */
 }
 
 .button{
     color: white;
-    background-color: #fe4066;
+    background-color: #8269dd;
     padding: 0.5rem;
     font-size: 1rem;
     border-radius: 0.5rem;
+    max-width: 6rem;
+}
+
+#welcome .right{
+    font-family: 'Georama', sans-serif;
+    width: 80%;
+}
+
+.animation{
+     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .button:hover{
     color: white;
-    background-color: #2c040c;
+    background-color: #352083;
 }
 
 #what{
-    background: rgb(176,116,142);
-    background: linear-gradient(0deg, rgba(176,116,142,1) 0%, rgba(255,255,255,1) 100%); 
+    background: #8269dd; 
+    padding: 0.8rem;
+    margin: 1rem 0 1rem 0;
 }
 
 #what .title{
@@ -107,12 +112,18 @@ main{
     justify-content: center;
     font-size: 4rem;
     font-weight: bolder;
+    margin: 0.5rem 0 .05rem 0;
+}
+
+#welcome .welcome-image{
+    max-width: 80%;
 }
 
 .projects{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin: 2rem 0 2rem 0;
 }
 
 h5{
@@ -124,12 +135,12 @@ h5{
     width: 45vw;
     height: 45vh;
     display: flex;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     align-items: center;
     font-weight: bolder;
     font-size: 1.2rem;
     border-radius: 10px;
-    margin: 1rem;
+    margin: 2rem 1rem 2rem 1rem;
 }
 
 .project-bottom{
@@ -141,7 +152,7 @@ h5{
 }
 
 .tech{
-    color: #fe4066;
+    color: #352083;
     margin: 0.5rem;
     padding: 0 0.5rem;
     background-color: white;
@@ -150,6 +161,9 @@ h5{
     font-size: 0.8rem;
 }
 
+.description{
+    padding: 1rem;
+}
 .tbug{
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) , url('../images/tbug.png') center center;
     background-size: cover;
@@ -192,7 +206,7 @@ h5{
 
 #contact{
     background: rgb(255,255,255);
-    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(176,116,142,1) 100%); 
+    /* background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(176,116,142,1) 100%);  */
     height: 80vh;
     color: black;
     display: flex;
@@ -202,8 +216,24 @@ h5{
 }
 
 #contact h2{
-    color: #030303;
+    color: #352083;
+    font-size: 4rem;
+    font-weight: bolder;
 }
+
+#contact button{
+    margin: 0 1rem;
+    background-color: #8269dd;
+    width: 5rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+}
+
+#contact button:hover{
+    color: white;
+    background-color: #352083;
+}
+
 
 form{
     display: flex;
@@ -225,7 +255,7 @@ input, textarea{
 button{
     width: 4rem;
     padding: 0.5rem;;
-    background-color: #fe4066;
+    background-color: #8269dd;
     border: none;
     border-radius: 5px;
     color: white;
@@ -241,7 +271,7 @@ footer{
 }
 
 .icons i{
-    color: #fe4066;
+    color: #8269dd;
     font-size: 1.2rem;
 }
 
@@ -260,9 +290,9 @@ footer{
     .project{
         width: 70vw;
     }
-    #welcome img{
-        width: 25vw;
-    }
+    /* #welcome .welcome-image{
+        max-width: 20vw;
+    } */
 }
 
 @media screen and (max-width : 800px){
@@ -270,9 +300,9 @@ footer{
     .icon-hidden{
         display: block;
     }
-    #welcome img{
+    /* #welcome .welcome-image{
         width: 30vw;
-    }
+    } */
     .icon-hidden {
         padding: 0.5rem;
         margin: 0.5rem;
@@ -284,9 +314,9 @@ footer{
     .project{
         width: 90vw;
     }
-    #welcome img{
+    /* #welcome .welcome-image{
         width: 36vw;
-    }
+    } */
     form{
         width: 75vw;
     }
@@ -311,9 +341,9 @@ footer{
         width: 75vw;
     }
 
-    #welcome img{
+    /* #welcome .welcome-image{
         width: 40vw;
-    }
+    } */
     .icon-hidden {
         padding: 0.5rem;
         margin: 0.5rem;
