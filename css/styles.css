@@ -177,32 +177,32 @@ h5{
 }
 
 .newsletter{
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) , url('../images/newsletter.jpg') center center;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) , url('../images/newsletter.png') center center;
     background-size: cover;
 }
 
 .newsletter:hover{
-    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)) , url('../images/newsletter.jpg') center center;
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)) , url('../images/newsletter.png') center center;
     background-size: cover;
 }
 
 .blog{
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) , url('../images/KaizenCouple.jpg') center center;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) , url('../images/KaizenCouple.png') center center;
     background-size: cover;
 }
 
 .blog:hover{
-    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)) , url('../images/KaizenCouple.jpg') center center;
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)) , url('../images/KaizenCouple.png') center center;
     background-size: cover;
 }
 
 .mj{
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) , url('../images/mj.jpg') center center;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) , url('../images/mj.png') center center;
     background-size: cover;
 }
 
 .mj:hover{
-    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)) , url('../images/mj.jpg') center center;
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)) , url('../images/mj.png') center center;
     background-size: cover;
 }
 
